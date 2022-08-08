@@ -11,7 +11,7 @@ set(carve_VERSION_PATCH 0a)
 
 set(CARVE_VERSION ${carve_VERSION_MAJOR}.${carve_VERSION_MINOR}.${carve_VERSION_PATCH})
 
-set(CMAKE_CXX_STANDARD 11)
+## set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 option(BUILD_COVERAGE                    "Compile with gcov"                                 OFF)
