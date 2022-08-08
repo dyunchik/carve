@@ -187,7 +187,7 @@ class SpatialSubdivTree {
       } else {
         for (size_t i = 0; i < n_children; ++i) {
           typename std::vector<obj_t>::iterator mid = std::partition(
-              beg, end, std::bind1st(intersection_test, children[i].aabb));
+              beg, end, std::bind(intersection_test, children[i].aabb, std::placeholders::_1));
           children[i].insertVector(beg, mid);
         }
       }
