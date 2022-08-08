@@ -1,0 +1,6 @@
+#define CARVE_VERSION "2.0.0a"
+
+/* #undef CARVE_DEBUG */
+/* #undef CARVE_DEBUG_WRITE_PLY_DATA */
+
+/* #undef CARVE_USE_EXACT_PREDICATES */

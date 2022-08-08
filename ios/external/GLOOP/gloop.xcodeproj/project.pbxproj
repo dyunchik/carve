@@ -1,0 +1,1322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		3918C0C0D9B74597A0EF3F6D /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6545C69608B6465399431148 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				90AC07F2D10003EC26947938 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				F2A6DC03C95B4FC498106EEC /* PBXTargetDependency */,
+				C1E0F7DC5944440DAC2E2C4A /* PBXTargetDependency */,
+				8CA2BD274C614F25AFD35A46 /* PBXTargetDependency */,
+				37563295317B40A5AEE29EDB /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		F8CC63A03CA04820A3E82A2E /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 36FC4CEEC3424BC7B29E0486 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				691FD4C49EF64CC3B67B2878 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		FD1BE2E7CB82412DADDAC4D0 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F33AD6E6E26842FDA851BFC0 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				EF4C25E4391DD9D5DC1866A4 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		17392767C5294AABA760E3F7 /* /Users/dyunchik/Projects/carve/external/GLOOP/src/radiance.cpp */ = {isa = PBXBuildFile; fileRef = 8649E308C839431CB278AEE4 /* /Users/dyunchik/Projects/carve/external/GLOOP/src/radiance.cpp */; };
+		2FF3273F462849E4981E0917 /* /Users/dyunchik/Projects/carve/external/GLOOP/src/model/ply_format.cpp */ = {isa = PBXBuildFile; fileRef = AC6E2A7A48204BF59972603A /* /Users/dyunchik/Projects/carve/external/GLOOP/src/model/ply_format.cpp */; };
+		4426CE241D9F44F9A96A58D8 /* /Users/dyunchik/Projects/carve/external/GLOOP/src/model/vtk_format.cpp */ = {isa = PBXBuildFile; fileRef = 4A6CE830C83341CD9E3B4037 /* /Users/dyunchik/Projects/carve/external/GLOOP/src/model/vtk_format.cpp */; };
+		485750035CE443539299EDE9 /* /Users/dyunchik/Projects/carve/external/GLOOP/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 7907DC626A0E426AA10A5B8F /* /Users/dyunchik/Projects/carve/external/GLOOP/CMakeLists.txt */; };
+		4C0FAA56226F45ED9D6A5A26 /* /Users/dyunchik/Projects/carve/external/GLOOP/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 0FDD1E0B65CE4EEA8FD06C5B /* /Users/dyunchik/Projects/carve/external/GLOOP/CMakeLists.txt */; };
+		4DC8B4B8AF614F66B67F99AB /* /Users/dyunchik/Projects/carve/external/GLOOP/src/matrix.cpp */ = {isa = PBXBuildFile; fileRef = 1592AE8E43C247C8872FD06C /* /Users/dyunchik/Projects/carve/external/GLOOP/src/matrix.cpp */; };
+		592523CD1A0944EBBC42D3EC /* /Users/dyunchik/Projects/carve/external/GLOOP/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 3B178E9FC8EB496AA0D3C027 /* /Users/dyunchik/Projects/carve/external/GLOOP/CMakeLists.txt */; };
+		64A0EA6D04844EDCB1F00BAC /* /Users/dyunchik/Projects/carve/external/GLOOP/src/model/stream.cpp */ = {isa = PBXBuildFile; fileRef = 7ACA36CDAFF7434B9F45AEF6 /* /Users/dyunchik/Projects/carve/external/GLOOP/src/model/stream.cpp */; };
+		7B23635B24494F10950C142F /* /Users/dyunchik/Projects/carve/external/GLOOP/src/quaternion.cpp */ = {isa = PBXBuildFile; fileRef = 279527216E894A86AB7C9AF9 /* /Users/dyunchik/Projects/carve/external/GLOOP/src/quaternion.cpp */; };
+		8F8E76459CAA4B8B910E2DD9 /* /Users/dyunchik/Projects/carve/external/GLOOP/src/model/obj_format.cpp */ = {isa = PBXBuildFile; fileRef = 470E46B66BD548FE83EC296B /* /Users/dyunchik/Projects/carve/external/GLOOP/src/model/obj_format.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		0DCE191C25724C79AD187249 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		81D8A21F99544B398A108D02 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		E75CC3CF15E0494B83B5B861 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		F9FE8D1CD55042289BCEEB61 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		476BD6C03A604CA88E99AE69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A9324C1368647248EAE64AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD1BE2E7CB82412DADDAC4D0;
+			remoteInfo = ZERO_CHECK;
+		};
+		5BA78FE2F99D4156822BE49C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A9324C1368647248EAE64AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7E679D1989A49A5AE8EBD88;
+			remoteInfo = gloop_image;
+		};
+		606B771A8F7641B2AC78ABA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A9324C1368647248EAE64AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3918C0C0D9B74597A0EF3F6D;
+			remoteInfo = ALL_BUILD;
+		};
+		80ABC9BC4F2341C3B074FC92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A9324C1368647248EAE64AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD1BE2E7CB82412DADDAC4D0;
+			remoteInfo = ZERO_CHECK;
+		};
+		8DA7926F728E449AAD8489AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A9324C1368647248EAE64AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD1BE2E7CB82412DADDAC4D0;
+			remoteInfo = ZERO_CHECK;
+		};
+		943069B19B2C4CBC9E172E03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A9324C1368647248EAE64AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD1BE2E7CB82412DADDAC4D0;
+			remoteInfo = ZERO_CHECK;
+		};
+		A5B68E11F0B746658ADDFC88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A9324C1368647248EAE64AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9240F9CCFEB43F8948F9382;
+			remoteInfo = gloop_math;
+		};
+		CC74405E57DA455286EEBF42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A9324C1368647248EAE64AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2D7489BC08D410DA2A9089A;
+			remoteInfo = gloop_model;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FDD1E0B65CE4EEA8FD06C5B /* /Users/dyunchik/Projects/carve/external/GLOOP/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		1592AE8E43C247C8872FD06C /* /Users/dyunchik/Projects/carve/external/GLOOP/src/matrix.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = matrix.cpp; path = src/matrix.cpp; sourceTree = SOURCE_ROOT; };
+		1D1486D732434BE3B4FA44E2 /* gloop_model */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libgloop_model.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		279527216E894A86AB7C9AF9 /* /Users/dyunchik/Projects/carve/external/GLOOP/src/quaternion.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = quaternion.cpp; path = src/quaternion.cpp; sourceTree = SOURCE_ROOT; };
+		2F80BA78B2754D0E8D51947D /* gloop_math */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libgloop_math.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B178E9FC8EB496AA0D3C027 /* /Users/dyunchik/Projects/carve/external/GLOOP/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		470E46B66BD548FE83EC296B /* /Users/dyunchik/Projects/carve/external/GLOOP/src/model/obj_format.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = obj_format.cpp; path = src/model/obj_format.cpp; sourceTree = SOURCE_ROOT; };
+		4A6CE830C83341CD9E3B4037 /* /Users/dyunchik/Projects/carve/external/GLOOP/src/model/vtk_format.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vtk_format.cpp; path = src/model/vtk_format.cpp; sourceTree = SOURCE_ROOT; };
+		4BA328F4965F4F59B1E13600 /* gloop_image */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libgloop_image.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6649202D693A44789B9CA049 /* /Users/dyunchik/Projects/carve/external/GLOOP/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7907DC626A0E426AA10A5B8F /* /Users/dyunchik/Projects/carve/external/GLOOP/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7ACA36CDAFF7434B9F45AEF6 /* /Users/dyunchik/Projects/carve/external/GLOOP/src/model/stream.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stream.cpp; path = src/model/stream.cpp; sourceTree = SOURCE_ROOT; };
+		8649E308C839431CB278AEE4 /* /Users/dyunchik/Projects/carve/external/GLOOP/src/radiance.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = radiance.cpp; path = src/radiance.cpp; sourceTree = SOURCE_ROOT; };
+		AC6E2A7A48204BF59972603A /* /Users/dyunchik/Projects/carve/external/GLOOP/src/model/ply_format.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ply_format.cpp; path = src/model/ply_format.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45B1F869BA1B421EB8C170BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		915E0848E71B410985FE2434 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC5B52F59E9A499E94DAF327 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03E2BE7281FC47459791AA6C /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				26C94029F0E3409B9D212377 /* CMake Rules */,
+				6649202D693A44789B9CA049 /* /Users/dyunchik/Projects/carve/external/GLOOP/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		0A969D8A3CEA4587BA81282F = {
+			isa = PBXGroup;
+			children = (
+				E60429B2161E4D6889B54783 /* gloop_model */,
+				FD6536EB6707450980983ED3 /* gloop_image */,
+				3DC62A763A8546F19A1831E8 /* gloop_math */,
+				03E2BE7281FC47459791AA6C /* ALL_BUILD */,
+				DC694C9040CD4213A593241B /* Products */,
+				30DAD307EC4A4F9AA61EB074 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1F0209C1D0F64933AC2955CF /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				8649E308C839431CB278AEE4 /* /Users/dyunchik/Projects/carve/external/GLOOP/src/radiance.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		26C94029F0E3409B9D212377 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		30DAD307EC4A4F9AA61EB074 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DC62A763A8546F19A1831E8 /* gloop_math */ = {
+			isa = PBXGroup;
+			children = (
+				E130D51828AF4B3F825968DB /* Source Files */,
+				7907DC626A0E426AA10A5B8F /* /Users/dyunchik/Projects/carve/external/GLOOP/CMakeLists.txt */,
+			);
+			name = gloop_math;
+			sourceTree = "<group>";
+		};
+		AC39C028F72743C8A5BECCAF /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				470E46B66BD548FE83EC296B /* /Users/dyunchik/Projects/carve/external/GLOOP/src/model/obj_format.cpp */,
+				AC6E2A7A48204BF59972603A /* /Users/dyunchik/Projects/carve/external/GLOOP/src/model/ply_format.cpp */,
+				7ACA36CDAFF7434B9F45AEF6 /* /Users/dyunchik/Projects/carve/external/GLOOP/src/model/stream.cpp */,
+				4A6CE830C83341CD9E3B4037 /* /Users/dyunchik/Projects/carve/external/GLOOP/src/model/vtk_format.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		DC694C9040CD4213A593241B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BA328F4965F4F59B1E13600 /* gloop_image */,
+				2F80BA78B2754D0E8D51947D /* gloop_math */,
+				1D1486D732434BE3B4FA44E2 /* gloop_model */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E130D51828AF4B3F825968DB /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				1592AE8E43C247C8872FD06C /* /Users/dyunchik/Projects/carve/external/GLOOP/src/matrix.cpp */,
+				279527216E894A86AB7C9AF9 /* /Users/dyunchik/Projects/carve/external/GLOOP/src/quaternion.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		E60429B2161E4D6889B54783 /* gloop_model */ = {
+			isa = PBXGroup;
+			children = (
+				AC39C028F72743C8A5BECCAF /* Source Files */,
+				0FDD1E0B65CE4EEA8FD06C5B /* /Users/dyunchik/Projects/carve/external/GLOOP/CMakeLists.txt */,
+			);
+			name = gloop_model;
+			sourceTree = "<group>";
+		};
+		FD6536EB6707450980983ED3 /* gloop_image */ = {
+			isa = PBXGroup;
+			children = (
+				1F0209C1D0F64933AC2955CF /* Source Files */,
+				3B178E9FC8EB496AA0D3C027 /* /Users/dyunchik/Projects/carve/external/GLOOP/CMakeLists.txt */,
+			);
+			name = gloop_image;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2D7489BC08D410DA2A9089A /* gloop_model */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF77718E5AB7485CBEFC283F /* Build configuration list for PBXNativeTarget "gloop_model" */;
+			buildPhases = (
+				2AE92B2B42DB4FDEAAE94974 /* Sources */,
+				EC5B52F59E9A499E94DAF327 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13F97EF80C814817BC7F8D7C /* PBXTargetDependency */,
+			);
+			name = gloop_model;
+			productName = gloop_model;
+			productReference = 1D1486D732434BE3B4FA44E2 /* gloop_model */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D9240F9CCFEB43F8948F9382 /* gloop_math */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5237061422B46069520C763 /* Build configuration list for PBXNativeTarget "gloop_math" */;
+			buildPhases = (
+				0F6F56612BAE4CF3A4D1DD39 /* Sources */,
+				915E0848E71B410985FE2434 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDB87283B5424582A1CD42C5 /* PBXTargetDependency */,
+			);
+			name = gloop_math;
+			productName = gloop_math;
+			productReference = 2F80BA78B2754D0E8D51947D /* gloop_math */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F7E679D1989A49A5AE8EBD88 /* gloop_image */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 463D9D62C9DD455B9E2C91E5 /* Build configuration list for PBXNativeTarget "gloop_image" */;
+			buildPhases = (
+				DB2A772CAAC248E6B47CB709 /* Sources */,
+				45B1F869BA1B421EB8C170BA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2190F7928B0B4EF6912CF6D7 /* PBXTargetDependency */,
+			);
+			name = gloop_image;
+			productName = gloop_image;
+			productReference = 4BA328F4965F4F59B1E13600 /* gloop_image */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A9324C1368647248EAE64AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1340;
+			};
+			buildConfigurationList = 7FCC02C366B446718BEC9FF7 /* Build configuration list for PBXProject "gloop" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				F9FE8D1CD55042289BCEEB61 /* Debug */,
+				81D8A21F99544B398A108D02 /* Release */,
+				E75CC3CF15E0494B83B5B861 /* MinSizeRel */,
+				0DCE191C25724C79AD187249 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 0A969D8A3CEA4587BA81282F;
+			projectDirPath = ../../../external/GLOOP;
+			projectRoot = "";
+			targets = (
+				3918C0C0D9B74597A0EF3F6D /* ALL_BUILD */,
+				FD1BE2E7CB82412DADDAC4D0 /* ZERO_CHECK */,
+				F7E679D1989A49A5AE8EBD88 /* gloop_image */,
+				D9240F9CCFEB43F8948F9382 /* gloop_math */,
+				B2D7489BC08D410DA2A9089A /* gloop_model */,
+				F8CC63A03CA04820A3E82A2E /* install */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		90AC07F2D10003EC26947938 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/dyunchik/Projects/carve/ios/external/GLOOP/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/dyunchik/Projects/carve/ios/external/GLOOP
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/dyunchik/Projects/carve/ios/external/GLOOP
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/dyunchik/Projects/carve/ios/external/GLOOP
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/dyunchik/Projects/carve/ios/external/GLOOP
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/dyunchik/Projects/carve/ios/external/GLOOP
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/dyunchik/Projects/carve/ios/external/GLOOP
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/dyunchik/Projects/carve/ios/external/GLOOP
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/dyunchik/Projects/carve/ios/external/GLOOP
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		EF4C25E4391DD9D5DC1866A4 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/dyunchik/Projects/carve/ios/external/GLOOP/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/dyunchik/Projects/carve/ios/external/GLOOP
+  make -f /Users/dyunchik/Projects/carve/ios/external/GLOOP/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/dyunchik/Projects/carve/ios/external/GLOOP
+  make -f /Users/dyunchik/Projects/carve/ios/external/GLOOP/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/dyunchik/Projects/carve/ios/external/GLOOP
+  make -f /Users/dyunchik/Projects/carve/ios/external/GLOOP/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/dyunchik/Projects/carve/ios/external/GLOOP
+  make -f /Users/dyunchik/Projects/carve/ios/external/GLOOP/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F6F56612BAE4CF3A4D1DD39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DC8B4B8AF614F66B67F99AB /* /Users/dyunchik/Projects/carve/external/GLOOP/src/matrix.cpp */,
+				7B23635B24494F10950C142F /* /Users/dyunchik/Projects/carve/external/GLOOP/src/quaternion.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE92B2B42DB4FDEAAE94974 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F8E76459CAA4B8B910E2DD9 /* /Users/dyunchik/Projects/carve/external/GLOOP/src/model/obj_format.cpp */,
+				2FF3273F462849E4981E0917 /* /Users/dyunchik/Projects/carve/external/GLOOP/src/model/ply_format.cpp */,
+				64A0EA6D04844EDCB1F00BAC /* /Users/dyunchik/Projects/carve/external/GLOOP/src/model/stream.cpp */,
+				4426CE241D9F44F9A96A58D8 /* /Users/dyunchik/Projects/carve/external/GLOOP/src/model/vtk_format.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB2A772CAAC248E6B47CB709 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17392767C5294AABA760E3F7 /* /Users/dyunchik/Projects/carve/external/GLOOP/src/radiance.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13F97EF80C814817BC7F8D7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD1BE2E7CB82412DADDAC4D0 /* ZERO_CHECK */;
+			targetProxy = 943069B19B2C4CBC9E172E03 /* PBXContainerItemProxy */;
+		};
+		2190F7928B0B4EF6912CF6D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD1BE2E7CB82412DADDAC4D0 /* ZERO_CHECK */;
+			targetProxy = 476BD6C03A604CA88E99AE69 /* PBXContainerItemProxy */;
+		};
+		37563295317B40A5AEE29EDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD1BE2E7CB82412DADDAC4D0 /* ZERO_CHECK */;
+			targetProxy = 8DA7926F728E449AAD8489AF /* PBXContainerItemProxy */;
+		};
+		691FD4C49EF64CC3B67B2878 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3918C0C0D9B74597A0EF3F6D /* ALL_BUILD */;
+			targetProxy = 606B771A8F7641B2AC78ABA4 /* PBXContainerItemProxy */;
+		};
+		8CA2BD274C614F25AFD35A46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7E679D1989A49A5AE8EBD88 /* gloop_image */;
+			targetProxy = 5BA78FE2F99D4156822BE49C /* PBXContainerItemProxy */;
+		};
+		C1E0F7DC5944440DAC2E2C4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2D7489BC08D410DA2A9089A /* gloop_model */;
+			targetProxy = CC74405E57DA455286EEBF42 /* PBXContainerItemProxy */;
+		};
+		F2A6DC03C95B4FC498106EEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9240F9CCFEB43F8948F9382 /* gloop_math */;
+			targetProxy = A5B68E11F0B746658ADDFC88 /* PBXContainerItemProxy */;
+		};
+		FDB87283B5424582A1CD42C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD1BE2E7CB82412DADDAC4D0 /* ZERO_CHECK */;
+			targetProxy = 80ABC9BC4F2341C3B074FC92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0645E49FD9E547999CEAF9D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		10D336DA4941482BB1ED4DF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		15DAA61182AB4344911FB4DE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		1BF9314435C44CB4BE32A074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		1F9F5D6C8E604691A218A3B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP/build;
+			};
+			name = Release;
+		};
+		2B59001A26DB40FB88876D3E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4508709940E5422998D2341F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/dyunchik/Projects/carve/external/GLOOP/include,/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gloop_math;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4D6DC04EC88C4E77A2C838DB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/dyunchik/Projects/carve/external/GLOOP/include,/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gloop_image;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		662A4A787A6542539C53616E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP/build;
+			};
+			name = RelWithDebInfo;
+		};
+		7B149C0220DB48E2BFA3CE43 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		8AD3A20A12CA43CA8FDF1249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/dyunchik/Projects/carve/external/GLOOP/include,/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gloop_math;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		920D872EDBDF4E52BD4EA5BC /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		96372F6825BA430F968F6877 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/dyunchik/Projects/carve/external/GLOOP/include,/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gloop_math;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		9DD84EBA41304A4A8B3756C8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/dyunchik/Projects/carve/external/GLOOP/include,/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gloop_model;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		9E27980AA0844424AE044CA2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A1A1149CD6E04E20B1673C88 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP/build;
+			};
+			name = MinSizeRel;
+		};
+		A750AFAFE5544B958AC14BDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/dyunchik/Projects/carve/external/GLOOP/include,/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gloop_image;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		AA2019970CA645D99C3C7F6B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/dyunchik/Projects/carve/external/GLOOP/include,/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gloop_math;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		B0F251EC7A9644AF85B0190B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B4D92E9654084AAB8D5E20F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		C3026B5949254400B5740821 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/dyunchik/Projects/carve/external/GLOOP/include,/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gloop_image;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C888CA27442F4165B3368EC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP/build;
+			};
+			name = Debug;
+		};
+		CE4E3CD99BAB4C969C55EF26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/dyunchik/Projects/carve/external/GLOOP/include,/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gloop_model;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		D4EAF71F929742CB889CE164 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		E4128B978ADA4234AE23F55F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/dyunchik/Projects/carve/external/GLOOP/include,/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gloop_model;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E65A7455113D4C4A82043523 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		E6BCB75A2A9E4A53892C2EC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/dyunchik/Projects/carve/external/GLOOP/include,/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gloop_image;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		F1FA156666B2450880064B0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/dyunchik/Projects/carve/external/GLOOP/include,/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gloop_model;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/dyunchik/Projects/carve/ios/external/GLOOP;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36FC4CEEC3424BC7B29E0486 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4EAF71F929742CB889CE164 /* Debug */,
+				B4D92E9654084AAB8D5E20F0 /* Release */,
+				2B59001A26DB40FB88876D3E /* MinSizeRel */,
+				B0F251EC7A9644AF85B0190B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		463D9D62C9DD455B9E2C91E5 /* Build configuration list for PBXNativeTarget "gloop_image" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A750AFAFE5544B958AC14BDC /* Debug */,
+				E6BCB75A2A9E4A53892C2EC7 /* Release */,
+				4D6DC04EC88C4E77A2C838DB /* MinSizeRel */,
+				C3026B5949254400B5740821 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6545C69608B6465399431148 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E65A7455113D4C4A82043523 /* Debug */,
+				10D336DA4941482BB1ED4DF9 /* Release */,
+				15DAA61182AB4344911FB4DE /* MinSizeRel */,
+				9E27980AA0844424AE044CA2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7FCC02C366B446718BEC9FF7 /* Build configuration list for PBXProject "gloop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C888CA27442F4165B3368EC2 /* Debug */,
+				1F9F5D6C8E604691A218A3B0 /* Release */,
+				A1A1149CD6E04E20B1673C88 /* MinSizeRel */,
+				662A4A787A6542539C53616E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A5237061422B46069520C763 /* Build configuration list for PBXNativeTarget "gloop_math" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96372F6825BA430F968F6877 /* Debug */,
+				8AD3A20A12CA43CA8FDF1249 /* Release */,
+				AA2019970CA645D99C3C7F6B /* MinSizeRel */,
+				4508709940E5422998D2341F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F33AD6E6E26842FDA851BFC0 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BF9314435C44CB4BE32A074 /* Debug */,
+				0645E49FD9E547999CEAF9D8 /* Release */,
+				920D872EDBDF4E52BD4EA5BC /* MinSizeRel */,
+				7B149C0220DB48E2BFA3CE43 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FF77718E5AB7485CBEFC283F /* Build configuration list for PBXNativeTarget "gloop_model" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4E3CD99BAB4C969C55EF26 /* Debug */,
+				F1FA156666B2450880064B0B /* Release */,
+				E4128B978ADA4234AE23F55F /* MinSizeRel */,
+				9DD84EBA41304A4A8B3756C8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A9324C1368647248EAE64AD /* Project object */;
+}
